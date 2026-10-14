@@ -4,7 +4,7 @@ import profilePhoto from '../assets/profile.svg'
 // TODO: replace everything below with your own details.
 
 export const profile = {
-  name: 'Alex Carter',
+  name: 'Amirhossein jafari',
   title: 'Junior Front-End Developer',
   tagline:
     'I build fast, responsive and accessible websites with React, Bootstrap and plain JavaScript.',

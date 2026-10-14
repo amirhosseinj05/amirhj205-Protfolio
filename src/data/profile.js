@@ -15,5 +15,5 @@ export const profile = {
   bio: "I'm a junior front-end developer who fell in love with the web after my first HTML lesson. Since then I've been building small apps, cloning websites to practise, and learning something new every week. I care about clean code, pages that load quickly, and interfaces that work just as well on a phone as on a laptop. I'm currently looking for a team where I can keep growing as a developer.",
   email: 'amirhosseinj969@gmail.com',
   github: 'https://github.com/amirhosseinj05',
-  linkedin: 'https://www.linkedin.com/in/alex-carter-dev',
+  linkedin: 'https://www.linkedin.com/in/amirhossein-jafari-918754157',
 }

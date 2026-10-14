@@ -1,0 +1,49 @@
+You are helping a junior front-end developer build a personal portfolio website. The code must look like it was written by a motivated junior developer: clean, readable, and easy to explain in an interview. Do NOT use advanced patterns, clever tricks, or heavy abstractions. When there are two ways to do something, choose the simpler and more common one. Work autonomously: scaffold the project, write all files, install dependencies, and verify that it builds and runs. Ask me questions only if something is truly blocking.
+
+## Tech stack (required)
+- React 18 + Vite (JavaScript, not TypeScript)
+- Bootstrap 5 + react-bootstrap (use its components: Navbar, Container, Row, Col, Card, Button, Badge, Form, Modal, ProgressBar, etc.)
+- bootstrap-icons for icons
+- Custom styling goes in a single `src/styles/custom.css`. Use Bootstrap classes first and custom CSS only where needed.
+- No other UI libraries (no Tailwind, MUI, etc.) and no animation libraries.
+- No react-router. This is a single-page site with sections, except for the 404 case, which can be skipped.
+
+## Sections (single page)
+1. **Hero**: name, job title, short tagline, a simple fade-in animation (CSS only), buttons ("View Projects", "Contact me"), and social icon links (GitHub, LinkedIn, Email).
+2. **About**: short bio, profile photo placeholder, a few quick facts (location, education, interests).
+3. **Skills**: grouped by category (Languages, Frameworks, Tools, Networking). Show each skill as a Badge.
+4. **Projects**: responsive grid of Cards (image, title, description, tech badges, GitHub link, live demo link). Clicking a card opens a Modal with more details.
+5. **Education / Experience**: a simple vertical timeline built with Bootstrap and a little CSS.
+6. **Contact**: a form (name, email, message) with basic client-side validation using react-bootstrap Form, and a success alert after submit. There is no backend; leave a clear TODO comment where Formspree or EmailJS can be connected later.
+7. **Footer**.
+
+The Navbar links scroll to each section (use normal anchor links with `scroll-behavior: smooth` in CSS).
+
+## Features (keep it simple)
+- Dark / light mode toggle using Bootstrap's `data-bs-theme`, saved in localStorage.
+- Fully responsive (mobile-first).
+- All content lives in `src/data/*.js` files (profile, skills, projects, experience) so I can edit my info without touching components. Fill them with realistic placeholder data and mark every placeholder with a `// TODO: replace` comment.
+- A "Back to top" button.
+- Basic SEO in `index.html`: title, meta description, favicon.
+- Basic accessibility: semantic HTML, alt texts on images, aria-labels on icon-only buttons.
+
+## Code style (junior level)
+- Folder structure:
+  src/
+    components/ (Navbar, Hero, About, Skills, Projects, ProjectModal, Timeline, Contact, Footer, ThemeToggle, BackToTop)
+    data/
+    styles/
+    assets/
+- Only function components with basic hooks (useState, useEffect). No custom hooks, no context, no useReducer, no memoization (useMemo/useCallback/React.memo).
+- Short, simple components. Plain props. Use `.map()` to render lists from data files.
+- Simple variable names and a few short comments that explain what each part does, the way a student would comment their own code.
+- No unused code or dependencies. Use the default Vite ESLint config and make sure `npm run lint` passes.
+- Design: clean, modern, minimal. One accent color defined as a CSS variable. Use the Inter font from Google Fonts.
+
+## Deliverables and verification
+1. Run `npm install`, `npm run lint`, and `npm run build`. Fix every error and warning.
+2. Start the dev server and make sure there are no console errors.
+3. Write a short `README.md`: what the project is, how to run it, which data files to edit, and how to deploy to GitHub Pages or Vercel (include the `base` setting in `vite.config.js` for GitHub Pages).
+4. At the end, give me a short summary of what you built and a list of things I must personalize.
+
+Work step by step: plan briefly, scaffold, build components one by one, then verify.

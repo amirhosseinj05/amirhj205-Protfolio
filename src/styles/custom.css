@@ -1,0 +1,288 @@
+/* =========================================================
+   Custom styles. Everything here only supplements Bootstrap.
+   ========================================================= */
+
+:root {
+  /* One accent colour used for buttons, links, badges and the timeline */
+  --accent: #4f46e5;
+  --accent-rgb: 79, 70, 229;
+}
+
+/* Smooth scrolling for the navbar anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+/* Anchor links should not hide behind the fixed navbar */
+section {
+  scroll-margin-top: 76px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 110px 0 60px;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--accent-rgb), 0.08),
+    transparent 60%
+  );
+}
+
+.hero-greeting {
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-name {
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: var(--accent);
+}
+
+.hero-tagline {
+  max-width: 600px;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  margin-bottom: 1.5rem;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+.hero-socials a,
+.footer-socials a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.hero-socials a:hover,
+.footer-socials a:hover {
+  color: var(--accent);
+}
+
+/* Simple fade-in animation for the hero text */
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Sections ---------- */
+
+.section-padding {
+  padding: 80px 0;
+}
+
+/* Alternating background colour between sections */
+.section-alt {
+  background-color: var(--bs-secondary-bg);
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+/* ---------- About ---------- */
+
+.about-photo {
+  max-width: 260px;
+  border: 6px solid rgba(var(--accent-rgb), 0.25);
+}
+
+.fact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.75rem;
+  background-color: var(--bs-body-bg);
+}
+
+.fact-box i {
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.fact-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.fact-value {
+  opacity: 0.8;
+}
+
+/* ---------- Skills ---------- */
+
+.skills-card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.skills-card .card-header {
+  background-color: transparent;
+  border-bottom: 2px solid rgba(var(--accent-rgb), 0.3);
+  font-weight: 700;
+}
+
+.skill-badge {
+  background-color: var(--accent) !important;
+  color: #fff !important;
+  font-weight: 500;
+  padding: 0.5em 0.85em;
+}
+
+/* ---------- Projects ---------- */
+
+.project-card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ---------- Timeline ---------- */
+
+.timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 3.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* vertical line behind the icons */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--bs-border-color);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-content {
+  background-color: var(--bs-body-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+}
+
+.timeline-place {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background-color: var(--bs-secondary-bg);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+}
+
+/* ---------- Back to top ---------- */
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Theme toggle ---------- */
+
+.theme-toggle {
+  align-self: center;
+}

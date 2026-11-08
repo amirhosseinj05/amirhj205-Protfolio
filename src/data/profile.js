@@ -8,8 +8,8 @@ export const profile = {
   title: 'Junior Front-End Developer',
   tagline:
     'I build fast, responsive and accessible websites with React, Bootstrap and plain JavaScript.',
-  location: 'Bucharest, Romania',
-  education: 'BSc Information Technology, 2024',
+  location: 'Tehran, Iran',
+  education: 'Ershad Damavand University',
   interests: 'Open source, UI design, home networking, football',
   photo: profilePhoto,
   bio: "I'm a junior front-end developer who fell in love with the web after my first HTML lesson. Since then I've been building small apps, cloning websites to practise, and learning something new every week. I care about clean code, pages that load quickly, and interfaces that work just as well on a phone as on a laptop. I'm currently looking for a team where I can keep growing as a developer.",

@@ -4,18 +4,18 @@
 export const skillGroups = [
   {
     category: 'Languages',
-    skills: ['JavaScript', 'HTML5', 'CSS3', 'SQL', 'Python'],
+    skills: ['JavaScript', 'HTML5', 'CSS3', 'Python'],
   },
   {
     category: 'Frameworks',
-    skills: ['React', 'Bootstrap', 'react-bootstrap', 'Sass'],
+    skills: ['Bootstrap', 'Sass'],
   },
   {
     category: 'Tools',
-    skills: ['Git', 'GitHub', 'VS Code', 'Vite', 'Figma', 'Chrome DevTools'],
+    skills: ['Git', 'GitHub', 'VS Code', 'Chrome DevTools'],
   },
   {
-    category: 'Networking',
-    skills: ['TCP/IP', 'DNS', 'HTTP/HTTPS', 'Wireshark', 'Linux basics'],
+    category: 'Currently Learning',
+    skills: ['React','Next.js','Tailwind CSS','REST APIs','Testing'],
   },
 ]

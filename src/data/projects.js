@@ -16,7 +16,7 @@ export const projects = [
     imageAlt: 'Screenshot placeholder of the Admin Dashboard project',
     tech: ['React', 'Bootstrap', 'REST API'],
     github: 'https://github.com/amirhosseinj05/Admin-Dashboard',
-    demo: 'https://weather-dashboard-demo.vercel.app',
+    demo: 'https://celebrated-lamington-c232ab.netlify.app/login',
     details:
       'Amir Admin is a modern and responsive admin dashboard built with React and Bootstrap, featuring a clean and user-friendly interface. It includes user management, interactive data tables, charts, forms, authentication, and advanced filtering options. Designed with a reusable component structure, it supports desktop, tablet, and mobile devices, with light and dark modes.',
   },

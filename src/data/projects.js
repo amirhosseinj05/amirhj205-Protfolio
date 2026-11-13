@@ -9,16 +9,16 @@ import projectImage4 from '../assets/project-4.svg'
 export const projects = [
   {
     id: 1,
-    title: 'Weather Dashboard',
+    title: 'Admin  Dashboard',
     description:
-      'A weather app that shows the forecast for any city using a free API, with a five-day outlook and unit switching.',
+      'A modern, responsive admin dashboard built with React and Bootstrap, featuring data visualization, user management, authentication, and interactive data tables.',
     image: projectImage1,
-    imageAlt: 'Screenshot placeholder of the Weather Dashboard project',
+    imageAlt: 'Screenshot placeholder of the Admin Dashboard project',
     tech: ['React', 'Bootstrap', 'REST API'],
-    github: 'https://github.com/alexcarter-dev/weather-dashboard',
+    github: 'https://github.com/amirhosseinj05/Admin-Dashboard',
     demo: 'https://weather-dashboard-demo.vercel.app',
     details:
-      'This was my first project that talked to a real API. I fetch the data with fetch(), handle the loading and error states, and store the last searched city in localStorage so it survives a page refresh. The layout is fully responsive: the forecast cards stack on mobile and sit in a row on desktop. I also added a simple unit toggle between Celsius and Fahrenheit.',
+      'Amir Admin is a modern and responsive admin dashboard built with React and Bootstrap, featuring a clean and user-friendly interface. It includes user management, interactive data tables, charts, forms, authentication, and advanced filtering options. Designed with a reusable component structure, it supports desktop, tablet, and mobile devices, with light and dark modes.',
   },
   {
     id: 2,
